@@ -1,0 +1,24 @@
+{
+  "profiles": {
+    "EnovaAddonWeb": {
+      "commandName": "Executable",
+      "executablePath": "C:\\enova365Server\\SonetaServer.exe",
+      "commandLineArgs": "/console /extpath=\"%userprofile%\\dodatki\" /noscheduler"
+    },
+    "EnovaAddon": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files (x86)\\Soneta\\Enova365\\SonetaExplorer.exe",
+      "commandLineArgs": " --DEBUG --extpath=\"$(MSBuildProjectDirectory)\\..\\dodatki\""
+    },
+    "EnovaAddonNoDbExt": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files (x86)\\Soneta\\Enova365\\SonetaExplorer.exe",
+      "commandLineArgs": "--extpath=\"$(MSBuildProjectDirectory)\\..\\dodatki\" --nodbextensions"
+    },
+    "EnovaAddonDebug": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files (x86)\\Soneta\\Enova365\\SonetaExplorer.exe",
+      "commandLineArgs": " --ext=\"Soneta.EDI.dll\" --ext=\"Soneta.WyciagiBankowe.dll\" --ext=\"tradiss.Poczta.dll\" --ext=\"tradiss.Zdarzenia.dll\" --ext=\"C:\\Users\\krojek\\source\\repos\\tradiss365\\Tradiss\\dodatki\\tradiss.CRM.dll\" --ext=\"tradiss.Mailing.dll\" --ext=\"Tradiss.ZadaniaDoWnioskow.dll\" --ext=\"Tradiss.Fakturowanie.dll\" --ext=\"tradiss.InfoPlat.dll\" --ext=\"tradiss.MailingUI.dll\" --ext=\"tradiss.MiscUI.dll\" --ext=\"tradiss.TmpDoFaktur.dll\" --ext=\"Tradiss.Windykacja.dll\" --ext=\"tradiss.ImpEDI.dll\" --ext=\"Tradiss.Licencje.dll\" --ext=\"tradiss.Paski.dll\" --ext=\"tradiss.Reminder.dll\" --ext=\"Tradiss.ZadanieNewPageForm.UI.dll\" --ext=\"Soneta.Integrator.dll\" --ext=\"Soneta.Integrator.UI.dll\" --ext=\"Tradiss.Usuwanie.Rozliczen.dll\" --ext=\"Tradiss.ContractorDashboard.dll\" --ext=\"BouncyCastle.Cryptography.dll\" --ext=\"Newtonsoft.Json.Bson.dll\" --ext=\"Newtonsoft.Json.dll\" --ext=\"Pkcs11Interop.dll\" --ext=\"System.Net.Http.Formatting.dll\" --ext=\"Tradiss.Kadry.dll\" --ext=\"Tradiss.Dodatki.dll\" --ext=\"Tradiss.ServiceDesk.dll\""
+    }
+  }
+}
