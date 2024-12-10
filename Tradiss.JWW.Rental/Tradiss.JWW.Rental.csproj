@@ -4,7 +4,4 @@
 		<TargetFramework>$(SonetaTargetFramework)</TargetFramework>
 		<Version>23.05.02</Version>
 	</PropertyGroup>
-	<ItemGroup>
-	  <PackageReference Update="Soneta.Products.Modules" Version="2412.0.0-beta.151775" />
-	</ItemGroup>
 </Project>

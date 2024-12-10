@@ -21,7 +21,10 @@ namespace Tradiss.JWW.Rental
         [Action("Przypisz pozycję.",Target = ActionTarget.ToolbarWithText)]
         public void Run()
         {
-            this._urzadzenie.PozycjaDokHandlowego = pars.Pozycja;
+            var trans = _urzadzenie.Session.Logout(true);
+            this._urzadzenie.PozycjaDokHandlowego = pars?.Pozycja;
+            trans.CommitInWorkflowWay();
+            trans.Dispose();
         }
 
     }
